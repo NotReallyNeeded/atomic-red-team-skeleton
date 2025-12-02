@@ -29,16 +29,18 @@ Given an Atomic YAML file, it generates a Markdown file containing:
 - Python 3.x
 - PyYAML
 
-Install dependency:
+Install the required dependency:
 
 ```powershell
 python -m pip install pyyaml
 ```
-Optional (only if you want to fetch MITRE descriptions automatically):
+Optional (only if you want to fetch MITRE ATT&CK descriptions automatically):
 
 ```powershell
 python -m pip install requests beautifulsoup4
 ```
+
+**Note:** In restricted corporate environments, pip access may be limited. If installation is blocked, request approval for the packages above via the standard software/exception process. If outbound access to MITRE is restricted, prefer using --attack-desc-file instead of --fetch-mitre.
 
 ## Usage
 
